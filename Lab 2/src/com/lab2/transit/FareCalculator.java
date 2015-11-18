@@ -16,7 +16,8 @@ public class FareCalculator {
 		int hour = Integer.parseInt(parsedTime[0]);
 		int minutes = Integer.parseInt(parsedTime[1]);
 		
-		if(age <= 5 || age >= 65) {	
+		if(age <= 5 || age >= 65)
+		{	
 			if(hour < 7 || (hour == 9 && minutes > 0) || hour > 9 || isHoliday) {
 				return 0.0;
 			}
